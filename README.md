@@ -128,9 +128,3 @@ npm run start
    $$\text{Score}(t, d) = \text{TF}(t, d) \times \text{IDF}(t)$$
 4. **Perankingan Kueri**:
    $$\text{Score}(d, q) = \sum_{t \in \text{Stem}(q) \cap d} w(t, d)$$
-
----
-
-## 👥 Kontribusi & Lisensi
-
-Proyek ini dibuat untuk keperluan edukasi dan riset sistem temu kembali informasi. Silakan lakukan *fork*, buka *issue*, atau kirim *pull request* untuk pengembangan lebih lanjut.
