@@ -51,42 +51,6 @@ Setiap halaman (Langkah 1 hingga 11) dilengkapi tombol **"Download PDF Hasil"**:
 
 ---
 
-## 📂 Struktur Direktori
-
-```text
-stkilab/
-├── app/
-│   ├── components/
-│   │   ├── DocumentContext.tsx         # Manajemen state korpus global
-│   │   ├── ExportResultPdfButton.tsx   # Tombol reusable download PDF
-│   │   ├── InputPanel.tsx              # Komponen upload file .txt & input teks
-│   │   ├── PreProcessingLab.tsx        # Modul Step 11 Lab Pre-processing
-│   │   ├── Sidebar.tsx                 # Navigasi 11 langkah
-│   │   ├── Step1Dokumen.tsx            # Modul Step 1 Dokumen mentah
-│   │   ├── Step2Parsing.tsx            # Modul Step 2 Pembersihan markup & spasi
-│   │   ├── Step3Leksikal.tsx           # Modul Step 3 Tokenisasi & case folding
-│   │   ├── Step4Stopword.tsx           # Modul Step 4 Penyaringan stopword
-│   │   ├── Step5Frasa.tsx              # Modul Step 5 Deteksi frasa istilah
-│   │   ├── Step6Stemming.tsx           # Modul Step 6 Pemotongan afiks kata dasar
-│   │   ├── Step7Pembobotan.tsx         # Modul Step 7 Matriks TF-IDF
-│   │   ├── Step8Pengindeksan.tsx       # Modul Step 8 Inverted Index
-│   │   ├── Step9UjiPencarian.tsx       # Modul Step 9 Retrieval & ranking kueri
-│   │   ├── Step10StudiKasus.tsx        # Modul Step 10 Komparasi dataset studi kasus
-│   │   ├── StepExplanation.tsx         # Komponen penjelasan konsep, teori & rumus
-│   │   └── StepResultTable.tsx         # Komponen pembantu tabel hasil
-│   ├── lib/
-│   │   ├── exportPdf.ts                # Engine generator PDF vektor & badge drawing
-│   │   └── nlpEngine.ts                # Algoritma NLP, stopword list, lematisasi & TF-IDF
-│   ├── globals.css                     # Konfigurasi Tailwind v4 & smooth scroll
-│   ├── layout.tsx                      # Metadata & root layout
-│   └── page.tsx                        # Controller halaman utama
-├── public/                             # Aset statis & ikon
-├── package.json                        # Dependensi proyek
-└── tsconfig.json                       # Konfigurasi TypeScript
-```
-
----
-
 ## 🚀 Panduan Menjalankan Aplikasi
 
 ### 1. Prasyarat
